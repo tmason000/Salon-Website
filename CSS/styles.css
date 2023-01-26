@@ -12,10 +12,8 @@
 }
 
 .logo {
-  font-family: 'Marck Script', cursive;
-  text-transform: uppercase;
+  font-family: 'Cinzel', serif;
   font-size: var(--size-30);
-  padding: var(--size-20);
 }
 
 .nav-list { display: flex; }
@@ -28,12 +26,11 @@
 .list-item:hover,
 .logo:hover {
   color: var(--hover);
-  transition: ease-in 0.5s;
-  font-size: var(--size-25);
+  transform: skew(-10deg);
 }
 
 .logo:hover {
-  font-size: 2.1875rem;
+  transform: skew(-10deg);
 }
 
 .shop-icon i {
@@ -49,6 +46,8 @@
   position: relative;
   z-index: 1;
   padding: 20.5rem;
+  min-height: 100vh;
+  background-attachment: fixed;
 }
 
 .bg-header:before {
@@ -66,4 +65,48 @@
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+
+section.about {
+  background-color: var(--about-bg);
+  height: 100vh;
+  padding-top: var(--size-100);
+  text-align: center;
+}
+
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: var(--size-40);
+}
+
+.about-wrapper p {
+  padding: 0 var(--size-75);
+  font-size: var(--size-20);
+}
+
+.about-img { max-width: 25rem; }
+
+about-us h2 { font-family: 'Cinzel'; }
+
+.btn:hover {
+  color: var(--hover);
+  background: #fff;
+}
+
+.services {
+  background-image: radial-gradient( circle 759px at -6.7% 50%, rgba(80,131,73,1) 0%, rgba(140,209,131,1) 26.2%, rgba(178,231,170,1) 50.6%, rgba(144,213,135,1) 74.1%, rgba(75,118,69,1) 100.3% );
+  height: 100%;
+  padding-top: var(--size-40);
+  
+}
+
+.services h2 { 
+  text-align: center;
+  margin: 0; 
+}
+
+.service-list {
+  padding-top: var(--size-30);
 }

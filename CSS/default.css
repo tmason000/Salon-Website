@@ -11,8 +11,10 @@
   --size-100: 6.25rem;
   --size-150: 9.375rem;
   --font-blue: #BCE0F0;
-  --hover:  #9BD1A7;
+  --hover:  #ff7a59;
   --white: #fff;
+  --about-bg: #111214;
+  --serices-bg: #F4A549;
 }
 
 body {
@@ -24,15 +26,13 @@ body {
   font-size: var(--size-15);
   line-height: 1.6;
   letter-spacing: 0;
-  color:  #F2F0B8;
+  color:  var(--white);
 }
 
 
 *,
 ::after,
-::before {
-  box-sizing: border-box;
-}
+::before { box-sizing: border-box; }
 
 ul {
   padding: 0;
@@ -68,7 +68,12 @@ img {
   margin-right: auto;
 }
 
-
+.btn {
+  background-color: var(--font-blue);
+  padding: var(--size-10);
+  border-radius: var(--size-20);
+  color: var(--about-bg);
+}
 
 @media (min-width: 1200px) {
   .container {
