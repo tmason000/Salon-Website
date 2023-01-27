@@ -8,38 +8,42 @@
   <link rel="stylesheet" href="./CSS/default.css">
   <link rel="stylesheet" href="./CSS/styles.css">
   <link rel="stylesheet" href="./CSS/responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 
-  
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+<script type="text/javascript" src="/index.js"></script>
   <script src="https://kit.fontawesome.com/1579e34462.js" crossorigin="anonymous"></script>
   <title>615 Salon</title>
 </head>
 <body>
 
-    <nav class="navbar">
-      <div class="container">
-        <div class="hero-header">
+    <nav id="topNav" class="navbar">
+      <div  class="container">
+        
           <a class="logo" href="#">Salon 615</a>
-          <!-- <h3>Salon and Boutique</h3> -->
-        </div>
-      <ul class="nav-list">
+   
+          <ul class="nav-list">
         <li>
           <a class="list-item" href="#">Home</a>
         </li>
         
         <li>
-          <a class="list-item" href="#">About</a>
+          <a class="list-item" href="#about">About</a>
         </li>
         
         <li>
-          <a class="list-item" href="#">Services</a>
+          <a class="list-item" href="#services">Services</a>
         </li>
         
         <li>
-          <a class="list-item" href="#">Book Now</a>
+          <a class="list-item" href="#book">Book Now</a>
+        </li>
+
+        <li class="Gallery">
+          <a href="#gallery">Gallery</a>
         </li>
         
         <li class="shop-icon">
@@ -62,6 +66,7 @@
         <img class="about-img" src="./images/salon-photo.jpg" alt="">
       
         <div class="about-us">
+          <a id="about"  href=""></a>
         <h2>About Us</h2>
         <p>This premier salon is located in Nashville, TN. The salon promises to offer a contemporary atmosphere for all its clients. From hair styling and cutting to blow dry and hair coloring, you can choose from these services offered by Salon 615.
         We offer not just a service, but an opportunity to focus on you while we do what we love!
@@ -73,26 +78,56 @@
     </section>
 
     <section class="services">
+      <a id="services" href=""></a>
       <div class="container">
       <h2>Services</h2>
-      <hr>
+      
       <div class="service-list">
+      <div class="price-wrapper">
         <p>haircut</p>
         <p>$45+</p>
+      </div>
+        
+      <div class="price-wrapper">
         <p>highlights</p>
         <p>$100+</p>
+      </div>
+      
+      <div class="price-wrapper"> 
         <p>root touch up</p>
         <p>$60+</p>
-        <p>gloss</p>
-        <p>$25+</p>
+      </div>
+      
+      <div class="price-wrapper">
+        <p>root touch up</p>
+        <p>$60+</p>
+      </div>
+        
+      <div class="price-wrapper">
         <p>Shampoo + blowout</p>
         <p>$45+</p>
+      </div>
+        
+      <div class="price-wrapper">
         <p>waxing</p>
         <p>20+</p>
-        <p>*all prices listed are an estimate and are subject to change depending on the consultation</p>
+      </div>
         
+      <p class="disclaimer">*all prices listed are an estimate and are subject to change depending on the consultation</p>
       </div>
     </div>
+    </section>
+
+    <a id="gallery" href=""></a>
+    <section class="photo-gallery">
+      <h2>Check Out Our Work</h2>
+      <div class="photo-grid">
+        <img src="./images/blonde.jpg" alt="girl with blonde hair">
+        <img src="./images/long-curly-hair.jpg" alt="woman with long, blonde, curly hair">
+        <img src="./images/red-hair.jpg" alt="woman with a red bob">
+        <img src="./images/dark-hair.jpg" alt="woman with long, curly, dark hair">
+        <img src="./images/long-hair.jpg" alt="long wavy hairstyle">
+      </div>
     </section>
 
     

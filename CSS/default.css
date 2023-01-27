@@ -10,11 +10,11 @@
   --size-75: 4.6875rem;
   --size-100: 6.25rem;
   --size-150: 9.375rem;
-  --font-blue: #BCE0F0;
+  --light-blue: #BCE0F0;
   --hover:  #ff7a59;
   --white: #fff;
-  --about-bg: #111214;
-  --serices-bg: #F4A549;
+  --dark: #111214;
+  --bright: #F4A549;
 }
 
 body {
@@ -51,7 +51,12 @@ h2 {
   font-size: 2rem;
   font-weight: 500;
   line-height: 1.2;
+  margin: 0; 
 }
+
+.logo,
+h2
+{ font-family: 'Lobster', cursive; }
 
 img {
   width: 100%;
@@ -69,10 +74,12 @@ img {
 }
 
 .btn {
-  background-color: var(--font-blue);
+  background-color: var(--light-blue);
   padding: var(--size-10);
   border-radius: var(--size-20);
-  color: var(--about-bg);
+  color: var(--dark);
+  font-family: 'Lobster', cursive;
+  font-size: 1rem;
 }
 
 @media (min-width: 1200px) {
