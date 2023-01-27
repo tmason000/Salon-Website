@@ -110,11 +110,13 @@ about-us h2 {
 
 .services {
   height: 100vh;
-  padding-top: var(--size-40);
   color: var(--dark);
   text-align: center;
   background-color: #F5C98B;
 }
+
+.services, 
+.footer { padding: var(--size-60); }
 
 .service-list {
   background-color: var(--light-blue);
@@ -157,3 +159,27 @@ about-us h2 {
   height: 22rem;
   object-fit: cover;
 }
+
+.footer { 
+  background-color: #B9EDB9; 
+  
+}
+
+.container.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact-info { padding: var(--size-10) 0; }
+.contact p, .social-icon { color: var(--dark); }
+.contact-info { display: flex; }
+.contact-info p { margin-right: var(--size-10); }
+
+.contact-info a i { 
+  margin: 0 var(--size-20);
+  font-size: var(--size-25); 
+}
+
+.contact-info a i:hover { color: var(--hover); }
+.container.contact img { max-width: 30rem; }
