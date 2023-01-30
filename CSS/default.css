@@ -80,6 +80,7 @@ img {
   color: var(--dark);
   font-family: 'Lobster', cursive;
   font-size: 1rem;
+  max-width: 8rem;
 }
 
 @media (min-width: 1200px) {
