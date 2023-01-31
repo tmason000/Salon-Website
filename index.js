@@ -1,13 +1,11 @@
-// const nav = document.getElementById("topNav");
-// window.onScroll = function () {
-//   if (window.pageYOffset > 100) {
-//     nav.classList.add("sticky");
-//   } else {
-//     nav.classList.remove("sticky");
-//   }
-// }
-
-
+const nav = document.getElementById("topNav");
+window.onscroll = function () {
+  if (window.pageYOffset > 600) {
+    nav.classList.add("sticky");
+  } else {
+    nav.classList.remove("sticky");
+  }
+}
 
 
 const navList = document.querySelector('.nav-list');
