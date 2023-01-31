@@ -13,14 +13,14 @@ html { scroll-behavior: smooth; }
   transition: ease-in-out 0.3s;
 }
 
-.navbar.sticky {
+/* .nav-list.sticky {
   background-color: var(--white);
 }
 
 .navbar.sticky .nav-list,
 .navbar.sticky .logo {
   color: var(--dark);
-}
+} */
 
 .logo {
   font-size: var(--size-50);
@@ -29,8 +29,17 @@ html { scroll-behavior: smooth; }
 
 .nav-list { 
   display: flex; 
-  background: hsl( 0 0% 100% / 0.1);
-  backdrop-filter: blur(1rem);
+  /* background: hsl( 0 0% 0% / 0.5);
+  backdrop-filter: blur(1rem); */
+}
+
+.mobile-nav-toggle { display: none; }
+
+@supports ( backdrop-filter: blur(1rem)) {
+  .nav-list {
+    background: hsl( 0 0% 100% / 0.1);
+    backdrop-filter: blur(1rem);
+  }
 }
 
 .list-item { 
@@ -46,14 +55,13 @@ html { scroll-behavior: smooth; }
 
 .list-item:hover { text-decoration: underline; }
 
-@media (max-width: 35em) {
-  .nav-list {
-    position: fixed;
-    inset: 0 0 0 30%;
-    flex-direction: column;
-    padding: min(30vh, 10rem) 2rem;
-  }
-}
+
+
+
+/* [aria-controls= "nav-list"] {
+  display: none;
+} */
+
 
 .shop-icon i { padding-left: var(--size-15); }
 
@@ -86,14 +94,13 @@ html { scroll-behavior: smooth; }
 section.about {
   background-color: var(--dark);
   text-align: center;
+  padding: var(--size-60); 
 }
 
 .about-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  padding: var(--size-50);
 }
 
 .about-wrapper p {
@@ -112,11 +119,7 @@ section.about {
   align-items: center;
 }
 
-.about-us h2 { 
-  text-shadow: var(--bright) 1px 0 10px;
-  padding: var(--size-25);
-  font-size: var(--size-40);
-}
+.about-us h2 { padding: var(--size-25); }
 
 .btn:hover {
   color: var(--hover);
@@ -124,19 +127,13 @@ section.about {
 }
 
 .services {
-  height: 100vh;
-  color: var(--dark);
   text-align: center;
   background-color: #F5C98B;
 }
 
-.services, 
-.footer { padding: var(--size-60); }
-
 .service-list {
   background-color: var(--light-blue);
-  margin-top: var(--size-60);
-  padding: var(--size-100);
+  padding: var(--size-60);
 }
 
 .price-wrapper {
@@ -148,18 +145,12 @@ section.about {
 .disclaimer { 
   font-size: var(--size-10);
   position: relative;
-  top: var(--size-100);
+  top: var(--size-40);
 }
 
 .photo-gallery {
   text-align: center;
   background-color: #E6C5D4;
-  padding: var(--size-40);
-}
-
-.photo-gallery h2 {
-  font-size: var(--size-40);
-  text-shadow: var(--bright) 1px 0 10px;
 }
 
 .photo-grid {
@@ -180,34 +171,12 @@ section.about {
   cursor: pointer;
 }
 
-.footer {  background-color: #B9EDB9; }
-
-.container.contact {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: var(--size-75);
-}
-
-.contact-info { padding: var(--size-10) 0; }
-.contact p, .social-icon { color: var(--dark); }
-.contact-info { display: flex; }
-.contact-info p { margin-right: var(--size-10); }
-
-.contact-info a i { 
-  margin: 0 var(--size-20);
-  font-size: var(--size-25); 
-}
-
-.contact-info a i:hover { color: var(--hover); }
-.container.contact img { max-width: 30rem; }
 .testimonials { background-color: var(--light-blue); }
 
 .testimonial-cards-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: var(--size-100) 0;
   flex-wrap: wrap;
 }
 
@@ -230,7 +199,7 @@ section.about {
   border: 3px dotted #ff7a59;
   color: #ff7a59;
   background: #fff;
-  transform: scale(1.1);
+  transform: scale(1.2);
   cursor: pointer;
 }
 
@@ -250,5 +219,26 @@ section.about {
   right: 20px;
 }
 
-.featured-card { font-size: var(--size-20); }
-.featured-card:hover { transform: scale(1.2); }
+.featured-card { font-size: var(--size-25); }
+.featured-card:hover { transform: scale(1.1); }
+
+.footer {  background-color: #B9EDB9; }
+
+.container.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact p, .social-icon { color: var(--dark); }
+.contact-info { display: flex; }
+.contact-info p { margin-right: var(--size-10); }
+
+.contact-info a i { 
+  margin: 0 var(--size-20);
+  font-size: var(--size-25); 
+}
+
+.contact-info a i:hover { color: var(--hover); }
+.container.contact img { max-width: 30rem; }
+

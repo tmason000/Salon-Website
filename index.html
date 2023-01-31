@@ -14,18 +14,23 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
   
-<script type="text/javascript" src="/index.js"></script>
   <script src="https://kit.fontawesome.com/1579e34462.js" crossorigin="anonymous"></script>
   <title>615 Salon</title>
+  <script type="text/javascript" src="index.js" defer></script>
 </head>
 <body>
 
+    <button class="mobile-nav-toggle" aria-controls="nav-list" aria-expanded="false">
+      <span class="sr-only">Menu</span>
+      <span>&#9776</span>
+    </button>
+
     <nav id="topNav" class="navbar">
-      <div  class="container">
+      <div class="container">
         
-          <a class="logo" href="#">Salon 615</a>
+          <a class="logo" href="#">Sienna Salon</a>
    
-          <ul class="nav-list">
+          <ul id="nav-list" data-visible="false" class="nav-list">
         <li>
           <a class="list-item" href="#">Home</a>
         </li>
@@ -62,8 +67,7 @@
 
   <section class="about">
     <a id="about"  href="#"></a>
-    <div class="container">
-      <div class="about-wrapper">
+    <div class="container about-wrapper">
         <img class="about-img" src="./images/salon-photo.jpg" alt="">
       
         <div class="about-us">
@@ -71,18 +75,15 @@
         <p>This premier salon is located in Nashville, TN. The salon promises to offer a contemporary atmosphere for all its clients. From hair styling and cutting to blow dry and hair coloring, you can choose from these services offered by Salon 615.
         We offer not just a service, but an opportunity to focus on you while we do what we love!
         </p>
-        <a class="btn" href="#">Book with Us!</a>
-      </div>
-        
+        <a class="btn" href="#">Book an Appointment!</a>
       </div>
     </section>
 
     <section class="services">
       <a id="services" href="#"></a>
-      <div class="container">
+      <div class="container service-list">
       <h2>Services</h2>
       
-      <div class="service-list">
       <div class="price-wrapper">
         <p>haircut</p>
         <p>$45+</p>
@@ -114,7 +115,6 @@
       </div>
         
       <p class="disclaimer">*all prices listed are an estimate and are subject to change depending on the consultation</p>
-      </div>
     </div>
     </section>
 
@@ -139,13 +139,14 @@
 
     <section class="testimonials">
       <a id="testimonials" href="#"></a>
+      <h2>All the Raves</h2>
     
       <div class="testimonial-cards-container container">
       <div class="testimonial-card">
         <span class="quote-left">
           <i class="fa-solid fa-quote-left quote-icon"></i>
         </span>
-          <p>This is the best my hair has ever looked! The salon felt very high-end, but was also warm and inviting. I highly recommend Salon 615.</p>
+          <p>This is the best my hair has ever looked! The salon felt very high-end, but was also warm and inviting. I highly recommend Sienna Salon.</p>
        <span class="quote-right">
         <i class="fa-solid fa-quote-right quote-icon"></i>
       </span>
@@ -155,7 +156,7 @@
         <span class="quote-left">
           <i class="fa-solid fa-quote-left quote-icon"></i>
         </span>
-          <p>This is the best my hair has ever looked! The salon felt very high-end, but was also warm and inviting. I highly recommend Salon 615.</p>
+          <p>I always leave feeling so relaxed and my hair feels amazing! Cannot recommend Sienna Salon more.</p>
        <span class="quote-right">
         <i class="fa-solid fa-quote-right quote-icon"></i>
       </span>
@@ -165,7 +166,7 @@
         <span class="quote-left">
           <i class="fa-solid fa-quote-left quote-icon"></i>
         </span>
-          <p>This is the best my hair has ever looked! The salon felt very high-end, but was also warm and inviting. I highly recommend Salon 615.</p>
+          <p>Sienna Salon is my go-to salon for professional service and time to myself. They always make me feel like a celebrity and I leave looking like one too!</p>
        <span class="quote-right">
         <i class="fa-solid fa-quote-right quote-icon"></i>
       </span>
@@ -214,7 +215,6 @@
              </span>
           </div>
           </div>
-
       </div>
     </footer>
 
