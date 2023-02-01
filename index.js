@@ -7,7 +7,6 @@ window.onscroll = function () {
   }
 }
 
-
 const navList = document.querySelector('.nav-list');
 const navToggle = document.querySelector('.mobile-nav-toggle');
 
@@ -22,8 +21,3 @@ navToggle.addEventListener('click', () => {
   navToggle.setAttribute('aria-expanded', false);
  }
 });
-
-
-
-
-

@@ -1,21 +1,4 @@
-/* iPads and Tablets- portrait
-
-@media screen and (max-width: 768px) {
-  [aria-controls= "nav-list"] {
-    display: block;
-  }
-
-  [aria-expanded="false"] ~ ul {
-    display: none;
-  }
-
-  [aria-expanded="true"] ~ {
-
-  }
-  
-} */
-
-
+/* /* iPads and Tablets- portrait  */
 @media screen and (max-width: 768px) {
   .nav-list {
     gap: 2em;
@@ -70,6 +53,18 @@
     flex-wrap: wrap; 
     gap: var(--size-25);
   }
+}
+
+/* Mobile- Portrait */
+@media screen and (max-width: 480px) {
+  .about-us p { 
+    font-size: 0.8rem; 
+    padding: var(--size-10);
+  }
+
+  .photo-grid { padding: 0 0 var(--size-25); }
+
+  .contact-info p {     white-space: nowrap; }
 }
 
 
