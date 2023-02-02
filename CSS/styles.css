@@ -76,18 +76,10 @@ html { scroll-behavior: smooth; }
 
 .nav-list { 
   display: flex; 
-  background: hsl( 0 0% 0% / 0.5);
   padding: var(--size-25);
 }
 
 .mobile-nav-toggle { display: none; }
-
-@supports ( backdrop-filter: blur(1rem)) {
-  .nav-list {
-    background: hsl( 0 0% 100% / 0.5);
-    backdrop-filter: blur(1rem);
-  }
-}
 
 .list-item { 
   padding: 0 var(--size-20); 
