@@ -58,9 +58,16 @@
 
 /* Mobile- Portrait */
 @media screen and (max-width: 480px) {
-  .content-box h2 { font-weight: var(--size-30); }
+  .content-box h2 { font-size: var(--size-25); }
   
   .content-box { padding: 0 0 var(--size-25); }
+
+  .close {
+    font-size: var(--size-15);
+    width: var(--size-25);
+    height: var(--size-25);
+    top: 0;
+  }
 
   section, footer { padding: var(--size-20); }
   
