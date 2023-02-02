@@ -58,6 +58,10 @@
 
 /* Mobile- Portrait */
 @media screen and (max-width: 480px) {
+  .content-box h2 { font-weight: var(--size-30); }
+  
+  .content-box { padding: 0 0 var(--size-25); }
+
   section, footer { padding: var(--size-20); }
   
   .about-us p { 
