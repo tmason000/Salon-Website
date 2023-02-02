@@ -1,5 +1,13 @@
 /* /* iPads and Tablets- portrait  */
 @media screen and (max-width: 768px) {
+  
+  @supports ( backdrop-filter: blur(1rem)) {
+    .nav-list {
+      background: hsl( 0 0% 100% / 0.5);
+      backdrop-filter: blur(1.2rem);
+    }
+  }
+  
   .nav-list {
     gap: 2em;
     
